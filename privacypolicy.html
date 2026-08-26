@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GIF Recorder Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the GIF Recorder Chrome extension.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    body { margin: 0; background: Canvas; color: CanvasText; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 24px 72px; }
+    h1, h2 { line-height: 1.25; }
+    h1 { margin-bottom: 0.25rem; }
+    h2 { margin-top: 2rem; }
+    .updated { margin-top: 0; opacity: 0.7; }
+    a { color: LinkText; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>GIF Recorder Privacy Policy</h1>
+    <p class="updated"><strong>Last updated:</strong> August 26, 2026</p>
+
+    <p>GIF Recorder is a Chrome extension that lets you record the visible contents of the active browser tab, convert the recording into an animated GIF, and save that GIF to your computer. This policy explains what data the extension handles and how that data is used.</p>
+
+    <h2>Summary</h2>
+    <p>GIF Recorder does not collect, transmit, sell, rent, or share your personal information or browsing data with the developer or with third parties. Tab recordings are processed locally in your browser and the resulting GIF is downloaded directly to your computer.</p>
+
+    <h2>Data the extension handles</h2>
+    <p>When you explicitly press the extension's Start Recording button, GIF Recorder temporarily accesses the visible video content of the active Chrome tab so it can create the GIF you requested. Because a browser tab may contain personal or sensitive information, that visible tab content may itself include such data.</p>
+    <p>The extension does not record microphone audio or tab audio. It does not access your camera, passwords, form entries outside what is visibly rendered in the recorded tab, browsing history, cookies, or files on your computer.</p>
+
+    <h2>How recording data is used</h2>
+    <p>Captured tab frames are used solely to create the animated GIF requested by you. The frames are processed locally inside Chrome using the extension's offscreen document and GIF encoder. The completed GIF is then passed to Chrome's Downloads API and saved to your configured Downloads folder.</p>
+    <p>GIF Recorder does not upload recordings or captured frames to any server, cloud service, analytics service, advertising service, or other third party.</p>
+
+    <h2>Local and temporary storage</h2>
+    <p>The extension uses Chrome session storage to keep temporary operational state such as whether a recording is active, the current tab identifier, recording start time, download status, and error information. This information is used only to operate the recorder and is not transmitted to the developer.</p>
+    <p>Captured frames and the generated GIF exist temporarily in browser memory while the recording is being processed. Temporary object URLs used for the GIF download are released after the download completes or is interrupted. The final GIF remains on your computer according to your own Chrome download settings and is under your control.</p>
+
+    <h2>Chrome permissions</h2>
+    <p>GIF Recorder requests only the permissions needed for its single purpose:</p>
+    <ul>
+      <li><strong>activeTab</strong> &mdash; identifies the tab you chose to record when you interact with the extension.</li>
+      <li><strong>tabCapture</strong> &mdash; captures the visible video content of that tab while recording is active.</li>
+      <li><strong>offscreen</strong> &mdash; allows recording and GIF processing to continue in an extension offscreen document.</li>
+      <li><strong>downloads</strong> &mdash; saves the completed GIF to your Downloads folder.</li>
+      <li><strong>storage</strong> &mdash; stores temporary recorder state within the current Chrome session.</li>
+    </ul>
+
+    <h2>Data sharing, sale, and advertising</h2>
+    <p>GIF Recorder does not sell user data. It does not share user data with third parties. It does not use user data for advertising, profiling, creditworthiness, or any purpose unrelated to creating and downloading the GIF requested by the user. The extension contains no advertising SDKs and no analytics or tracking code.</p>
+
+    <h2>Chrome Web Store Limited Use disclosure</h2>
+    <p>GIF Recorder's use of information received from Chrome APIs is limited to providing and improving the extension's single user-facing purpose: recording a user-selected browser tab as a GIF and downloading that GIF. User data is not transferred for advertising, personalization, profiling, or unrelated purposes, and humans are not permitted to read captured tab content because the extension does not transmit that content to the developer in the first place.</p>
+
+    <h2>Third-party services</h2>
+    <p>GIF Recorder does not send recording data to third-party services. Chrome itself and the Chrome Web Store are products provided by Google and may process information independently under Google's own terms and privacy policies. That processing is separate from GIF Recorder's own data handling.</p>
+
+    <h2>Children's privacy</h2>
+    <p>GIF Recorder does not knowingly collect personal information from children or from any other users. The extension does not operate a server-side account or user-data collection system.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If the extension's data practices change, this privacy policy will be updated to describe those changes. Material changes affecting user data handling will also be reflected in the Chrome Web Store disclosures as required.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this privacy policy or GIF Recorder can be raised through the project's GitHub repository: <a href="https://github.com/ChrisJohnNewton/gif-recorder">github.com/ChrisJohnNewton/gif-recorder</a>.</p>
+  </main>
+</body>
+</html>
