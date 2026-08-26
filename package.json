@@ -4,7 +4,8 @@
   "description": "A minimal Chrome Manifest V3 extension that records the visible area of the current tab as an animated GIF and automatically saves it to Chrome's Downloads folder when you stop.",
   "main": "background.js",
   "scripts": {
-    "git": "git add . && git commit -m \"More changes\" && git push"
+    "git": "git add . && git commit -m \"More changes\" && git push",
+    "zip": "node scripts/zip-extension.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ChrisJohnNewton/gif-recorder/issues"
   },
-  "homepage": "https://github.com/ChrisJohnNewton/gif-recorder#readme"
+  "homepage": "https://github.com/ChrisJohnNewton/gif-recorder#readme",
+  "devDependencies": {
+    "archiver": "^7.0.1"
+  }
 }
